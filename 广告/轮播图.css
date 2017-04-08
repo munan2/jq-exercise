@@ -1,0 +1,141 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+#head{
+    width: 800px;
+    height: 30px;
+    background: #ccc;
+}
+#head ul{
+    margin-left: 20px;
+}
+#head li{
+    float: left;
+    margin-right: 5px;
+    width: 70px;
+    height: 30px;
+}
+#head li a{
+    width: 100%;
+    height: 98%;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+}
+.selected{
+    background: #fff;
+}
+.content{
+    width: 800px;
+    height: 400px;
+}
+.content ul li{
+    width: 400px;
+    height: 120px;
+    float: left;
+    border-bottom: 1px dashed #000;
+}
+.cont1 .img1,.img2,.img3,.img4,.img5,.img6{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.cont1 .img1{
+    background: url('images/g44725-1.jpg') no-repeat;
+}
+.cont1 .img2{
+    background: url('images/g77374-2.jpg') no-repeat;
+}
+.cont1 .img3{
+    background: url('images/g44725-1.jpg') no-repeat;
+}
+.cont1 .img4{
+    background: url('images/g44725-1.jpg') no-repeat;
+}
+.cont1 .img5{
+    background: url('images/g44725-1.jpg') no-repeat;
+}
+.cont1 .img6{
+    background: url('images/g44725-1.jpg') no-repeat;
+}
+.cont2 .img1,.img2,.img3,.img4,.img5,.img6{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    margin-left: 20px;
+    margin-top: 30px;
+    background: url('images/g61581-1.jpg') no-repeat;
+}
+.cont3 .img1,.img2,.img3,.img4,.img5,.img6{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    margin-left: 20px;
+    margin-top: 30px;
+    background: url('images/g99630-1.jpg') no-repeat;
+}
+.cont4 .img1,.img2,.img3,.img4,.img5,.img6{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    margin-left: 20px;
+    margin-top: 30px;
+    background: url('images/g58422-9.jpg') no-repeat;
+}
+.cont5 .img1,.img2,.img3,.img4,.img5,.img6{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    margin-left: 20px;
+    margin-top: 30px;
+    background: url('images/g225599-3.jpg') no-repeat;
+}
+.cont6 .img1,.img2,.img3,.img4,.img5,.img6{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    margin-left: 20px;
+    margin-top: 30px;
+    background: url('images/g205089-1.jpg') no-repeat;
+}
+.sub-cont{
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.sub-cont a{
+    color: #369;
+}
+.sub-cont p{
+    color: #333;
+}
+.sub-cont a,p{
+    font-size: 14px;
+    line-height: 25px;
+}
+#con-two,#con-three,#con-three,#con-four,#con-five,#con-six{
+    display: none;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>简单导航菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul .hmain {
+            float: left;
+            width: 150px;
+            height: 30px;
+            background: #ccc;
+
+        }
+         .main-content{
+            background: url('images/down.gif') no-repeat ;
+            background-position: 20px center;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 21px;
+             color: #000;
+        }
+         .sub-menu{
+             display: none;
+         }
+        .sub-menu li{
+            width: 150px;
+            height: 30px;
+            background: #333;
+
+
+        }
+        .sub-menu li a{
+            color: #fff;
+            font-size: 20px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li class="hmain">
+        <a href="#" class='main-content'>菜单项1</a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#">子菜单11</a>
+            </li>
+            <li>
+                <a href="#">子菜单12</a>
+            </li>
+        </ul>
+    </li>
+    <li class="hmain">
+        <a href="#" class='main-content'>菜单项2</a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#">子菜单21</a>
+            </li>
+            <li>
+                <a href="#">子菜单22</a>
+            </li>
+        </ul>
+    </li>
+    <li class="hmain">
+        <a href="#" class='main-content'>菜单项3</a>
+        <ul class="sub-menu">
+            <li>
+                <a href="#">子菜单31</a>
+            </li>
+            <li>
+                <a href="#">子菜单32</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<script src="../jquery-1.12.4.js"></script>
+<script>
+    $('.hmain').hover(function(){
+        $(this).children('ul').stop().slideDown('slow');
+        $('.main-content').css({
+            'background':"url('images/up.gif') no-repeat",
+            'background-position':'20px center'});
+    },function(){
+        $(this).children('ul').stop().slideUp('slow');
+        $('.main-content').css({
+            'background':"url('images/down.gif') no-repeat",
+            'background-position':'20px center'});
+    });
+</script>
+</body>
+</html>
